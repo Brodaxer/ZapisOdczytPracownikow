@@ -67,7 +67,7 @@ class CompanyControler {
             System.err.println("Nie udalo sie odczytac z pliku");
             e.printStackTrace();
         }
-
+        printEmployee(company);
     }
 }
 

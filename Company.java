@@ -1,9 +1,10 @@
 
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 
-class Company {
+class Company implements Serializable {
 
     private static final int MAX_EMPLOYEE = 3;
     private Employee[] people = new Employee[MAX_EMPLOYEE];
