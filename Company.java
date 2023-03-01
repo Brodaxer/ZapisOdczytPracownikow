@@ -1,7 +1,8 @@
-import java.util.Scanner;
+import java.util.Arrays;
+
 
 class Company {
-    Scanner sc = new Scanner(System.in);
+
     private static final int MAX_EMPLOYEE = 3;
     private Employee[] people = new Employee[MAX_EMPLOYEE];
     private int count = 0;
@@ -15,5 +16,8 @@ class Company {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return Arrays.toString(people);
+    }
 }
